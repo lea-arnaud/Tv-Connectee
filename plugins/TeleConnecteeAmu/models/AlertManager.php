@@ -6,8 +6,7 @@
  * Time: 11:01
  */
 
-class AlertManager
-{
+class AlertManager extends Model{
     /**
      * Correspond to the database
      * @var
