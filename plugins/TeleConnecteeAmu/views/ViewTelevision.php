@@ -44,7 +44,7 @@ class ViewTelevision extends ViewG{
         $this->displaySelect($years, $groups, $halfgroups);
 
         echo'
-                <input type="button" onclick="addButton()" value="Ajouter des emplois du temps">
+                <input type="button" onclick="addButtonTv()" value="Ajouter des emplois du temps">
                     <button type="submit" name="createTv">Créer</button>
                 </form>
             </div>

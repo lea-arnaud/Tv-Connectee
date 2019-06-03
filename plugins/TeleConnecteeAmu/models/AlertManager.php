@@ -39,7 +39,7 @@ class AlertManager
      * @param $content
      * @param $endDate
      */
-    public function addAlertDB($content, $endDate, $codes{
+    public function addAlertDB($content, $endDate, $codes){
         global $wpdb;
 
         $current_user = wp_get_current_user();

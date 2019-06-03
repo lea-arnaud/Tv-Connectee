@@ -1,6 +1,6 @@
 let count = 0;
 
-function addButton() {
+function addButtonTv() {
     count = count + 1;
     $.ajax({
         url: '/wp-content/plugins/TeleConnecteeAmu/views/js/utils/allCodes.php',
@@ -8,6 +8,29 @@ function addButton() {
         let div = $('<div >', {
             class:'row'
         }).appendTo('#registerTvForm');
+        let select = $('<select >', {
+            id: count,
+            name: 'selectTv[]',
+            class: 'form-control select'
+        }).append(data).appendTo(div);
+        let button = $('<input >', {
+            id: count,
+            class: 'selectbtn',
+            type: 'button',
+            onclick: 'deleteRow(this.id)',
+            value: 'Supprimer'
+        }).appendTo(div)
+    });
+}
+
+function addButtonAlert() {
+    count = count + 1;
+    $.ajax({
+        url: '/wp-content/plugins/TeleConnecteeAmu/views/js/utils/allCodes.php',
+    }).done(function(data) {
+        let div = $('<div >', {
+            class:'row'
+        }).appendTo('#creationAlert');
         let select = $('<select >', {
             id: count,
             name: 'selectTv[]',

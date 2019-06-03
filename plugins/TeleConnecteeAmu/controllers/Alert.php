@@ -46,9 +46,14 @@ class Alert
      */
     public function createAlert($action, $content, $endDate){
 
-        $this->view->displayAlertCreationForm();
+        $years = $this->DB->getCodeYear();
+        $groups = $this->DB->getCodeGroup();
+        $halfgroups = $this->DB->getCodeHalfgroup();
+
+        $this->view->displayAlertCreationForm($years, $groups, $halfgroups);
         if(isset($action)) {
-            $this->DB->addAlertDB($content, $endDate);
+            $codes = $_POST['selectAlert'];
+            $this->DB->addAlertDB($content, $endDate, $codes);
         }
     } //createAlert()
 
