@@ -1,0 +1,30 @@
+/* TABLE */
+.errorNotRegister{
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.tabSchedule {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.headerTab {
+    background-color: #00558a;
+}
+
+@media (max-width: 1000px) {
+
+
+}

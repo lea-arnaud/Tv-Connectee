@@ -1,0 +1,53 @@
+/*__Information main__*/
+
+.titleInfo {
+    max-width: 100%;
+    font-size : 3em;
+    text-align: center;
+}
+
+.content_info{
+    max-width: 100%;
+    font-size : 1.5em;
+    text-align: center;
+}
+
+.content_info img{
+    max-height:35ex;
+}
+
+@media (max-height: 1100px) {
+    .titleInfo {
+        width: 100%;
+        font-size : 3em;
+        text-align: center;
+    }
+
+    .content_info{
+        width: 100%;
+        font-size : 1.5em;
+        text-align: center;
+    }
+
+    .content_info img{
+        max-height:45ex;
+    }
+}
+
+@media (max-height: 800px) {
+    .titleInfo {
+        width: 100%;
+        font-size : 3em;
+        text-align: center;
+    }
+
+    .content_info{
+        width: 100%;
+        font-size : 1.5em;
+        text-align: center;
+    }
+
+    .content_info img{
+        max-height:30ex;
+    }
+}

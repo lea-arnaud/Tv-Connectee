@@ -1,0 +1,164 @@
+/*
+    Theme Name: TvConnecteeAmu
+    Theme URI: http://www.tvconnectee.com/
+    Description: The first theme created by Nicolas Rohrbach.
+    Version: 0.5
+    Licence: GNU General Public License v2 ou ultérieure
+    Licence URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Author: Nicolas Rohrbach
+    TvConnecteeAmu by Nicolas Rohrbach|| http://www.tvconnectee.com
+    Tags: bootstrap, une colonne, deux colonnes, barre latérale droite, en-tête flexible, prêt pour l'accessibilité, couleurs personnalisées, en-tête personnalisé, logo personnalisé, widgets de pied de page, options de thème
+*/
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    border-style: none;
+}
+
+a img {
+    border: 0;
+}
+
+/* LINK */
+a {
+    line-height: inherit;
+    color: #1779ba;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:focus, a:hover {
+    color: #1468a0;
+}
+
+.ninja {
+    opacity: 0;
+}
+
+/* FORM */
+
+.cadre {
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    background-color: #EEEEEE;
+}
+
+/*__form__*/
+th {font-size : 120%;}
+
+.tdcentered {text-align: center;}
+
+
+td img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+form input{
+    margin : 3px;
+}
+form button{
+    margin : 3px;
+}
+
+@media (max-width: 1000px) {
+
+    #content {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    #content-twocolumns {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    /* SIDEBAR */
+    #sidebar-left {
+        margin-top: 1%;
+        width: 100%;
+        border-top: 1px solid darkgrey;
+    }
+
+    #sidebar-right {
+        margin-top: 1%;
+        width: 100%;
+        border-top: 1px solid darkgrey;
+    }
+
+    #footer-left {
+        width: 100%;
+    }
+
+    #footer-right {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+/* COMMENTS */
+.comments-template{
+    margin: 10px 0 0 0;
+}
+
+.comments-template ol{
+    margin: 10px;
+    padding: 0 0 0 15px;
+    list-style: none;
+}
+
+.comments-template ol p{
+    font-family: Trebuchet MS, Arial, Hevletica, Sans-serif;
+    font-size: 0.9em;
+}
+
+.comments-template ol li{
+    margin: 10px 0 0 0;
+    line-height: 15px;
+    padding: 0 0 10px;
+}
+
+.comments-template h2, .comments-template h3{
+    font-size: 1.2em;
+}
+
+.commentmetadata{
+    font-size: 0.9em;
+}
+
+.comments-template p.nocomments{
+    padding: 0;
+}
+
+.comments-template textarea{
+    font-family: Trebuchet MS, Arial, Hevletica, Sans-serif;
+    font-size: 0.9em;
+}
+
+.cadre_commentaires {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.inpFil {
+    color: #000000;
+}
