@@ -39,7 +39,7 @@ class AlertManager
      * @param $content
      * @param $endDate
      */
-    public function addAlertDB($content, $endDate){
+    public function addAlertDB($content, $endDate, $codes{
         global $wpdb;
 
         $current_user = wp_get_current_user();
@@ -52,13 +52,14 @@ class AlertManager
 
         $wpdb->query(
             $wpdb->prepare(
-                "INSERT INTO `alerts`(`ID_alert`,`author`, `text`, `creation_date`, `end_date` )
-                        VALUES (%d, %s, %s, %s, %s)",
+                "INSERT INTO `alerts`(`ID_alert`,`author`, `text`, `creation_date`, `end_date`, `codes` )
+                        VALUES (%d, %s, %s, %s, %s, %s)",
                 null,
                 $user,
                 $content,
                 $creationDate,
-                $endDate
+                $endDate,
+                $codes
             )
         );
     } //addAlertDB()
